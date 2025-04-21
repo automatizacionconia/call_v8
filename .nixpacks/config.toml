@@ -1,2 +1,3 @@
 [start]
-command = "node /assets/prestart.mjs && (php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf)"
+command = "sh /assets/prestart.sh && (php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf)"
+
