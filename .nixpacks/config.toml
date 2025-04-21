@@ -1,4 +1,2 @@
-'EOF'
 [start]
 command = "node /assets/prestart.mjs && (php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf)"
-EOF
