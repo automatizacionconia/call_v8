@@ -1,21 +1,19 @@
 import { $ } from "zx";
 
-// Crear carpetas de logs y cache de Laravel
+// Carpetas Laravel
 await $`mkdir -p /app/storage/logs`;
 await $`mkdir -p /app/bootstrap/cache`;
-
-// Crear archivo de log si no existe
 await $`touch /app/storage/logs/laravel.log`;
 
-// Establecer permisos correctos
-await $`chmod -R 775 /app/storage`;
-await $`chmod -R 775 /app/bootstrap/cache`;
+// ⚠️ Permisos máximos (solo temporalmente, para validar que Laravel puede escribir)
+await $`chmod -R 777 /app/storage`;
+await $`chmod -R 777 /app/bootstrap/cache`;
 
-console.log("✔️ Laravel storage y cache preparados");
+console.log("✔️ Laravel storage y cache creados con permisos 777");
 
-// Opcional: para que Nginx no falle
+// NGINX logs
 await $`mkdir -p /var/log/nginx`;
 await $`touch /var/log/nginx/error.log`;
 await $`chmod -R 755 /var/log/nginx`;
 
-console.log("✔️ Nginx log preparado");
+console.log("✔️ Nginx logs OK");
