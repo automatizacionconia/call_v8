@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1431 319" width="1431" height="319">
+	<title>logo-dark</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #1697f6 } 
+		.s1 { fill: #aeddff } 
+		.s2 { fill: #1867c0 } 
+		.s3 { fill: #7bc6ff } 
+		.t4 { font-size: 191px;fill: #ffffff;font-weight: 400;font-family: "Alatsi-Regular", "Alatsi" } 
+	</style>
+	<path class="s0" d="m187.9 71.2l-73.4 127.2 69.5 120.4 92-159.4 92-159.4h-139z"/>
+	<path class="s1" d="m92 159.4l4.8 8.4 68.7-119 28.2-48.8h-9.7-184z"/>
+	<path class="s2" d="m229 0c34.8 114.5-45 318.8-45 318.8l-69.5-120.4z"/>
+	<path class="s3" d="m193.7 0c-146.6 0-96.9 167.8-96.9 167.8z"/>
+	<text id="VIRTUAL" style="transform: matrix(1,0,0,1,388,208)" >
+		<tspan x="0" y="0" class="t4">V</tspan><tspan  y="0" class="t4">I</tspan><tspan  y="0" class="t4">R</tspan><tspan  y="0" class="t4">T</tspan><tspan  y="0" class="t4">U</tspan><tspan  y="0" class="t4">A</tspan><tspan  y="0" class="t4">L
+</tspan>
+	</text>
+</svg>
