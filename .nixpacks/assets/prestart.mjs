@@ -6,4 +6,4 @@ await $`touch storage/logs/laravel.log`;
 await $`chmod -R 775 storage`;
 await $`chmod -R 775 bootstrap/cache`;
 
-console.log("✔️ storage/logs y bootstrap/cache preparados con permisos correctos");
+console.log("✔️ Laravel folders created and permissions set");
