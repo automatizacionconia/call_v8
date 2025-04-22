@@ -1,2 +1,2 @@
 [start]
-command = "node /assets/prestart.mjs && php artisan config:cache && (php-fpm -y /assets/php-fpm.conf & nginx -c /tmp/nginx.conf)"
+command = "node /assets/prestart.mjs && sh /assets/prestart.sh && php artisan config:cache && (php-fpm -y /assets/php-fpm.conf & nginx -c /tmp/nginx.conf)"

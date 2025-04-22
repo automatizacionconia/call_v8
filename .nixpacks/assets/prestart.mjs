@@ -16,4 +16,6 @@ await $`mkdir -p /var/log/nginx`;
 await $`touch /var/log/nginx/error.log`;
 await $`chmod -R 755 /var/log/nginx`;
 
+
+
 console.log("✔️ Nginx logs OK");
