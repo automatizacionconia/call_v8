@@ -3,6 +3,6 @@
 /vendor
 #/public
 .env
-error_log
+#error_log
 .editorconfig
 .gitattributes
