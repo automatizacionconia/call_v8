@@ -1,21 +1,14 @@
 import { $ } from "zx";
 
-// Carpetas Laravel
+// Crea carpetas necesarias
 await $`mkdir -p /app/storage/logs`;
 await $`mkdir -p /app/bootstrap/cache`;
-await $`touch /app/storage/logs/laravel.log`;
 
-// ⚠️ Permisos máximos (solo temporalmente, para validar que Laravel puede escribir)
-await $`chmod -R 777 /app/storage`;
-await $`chmod -R 777 /app/bootstrap/cache`;
+// Asigna permisos para escritura
+await $`chmod -R 775 /app/storage`;
+await $`chmod -R 775 /app/bootstrap/cache`;
 
-console.log("✔️ Laravel storage y cache creados con permisos 777");
+// Asegura permisos de ejecución para prestart.sh
+await $`chmod +x /assets/prestart.sh`;
 
-// NGINX logs
-await $`mkdir -p /var/log/nginx`;
-await $`touch /var/log/nginx/error.log`;
-await $`chmod -R 755 /var/log/nginx`;
-
-
-
-console.log("✔️ Nginx logs OK");
+console.log("✅ Directorios creados, permisos aplicados y script listo para ejecutarse");
